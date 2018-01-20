@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rhadana.sch.iak_bali.MainActivity"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/ivPerson"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/iak"
+        />
+
+    <TableLayout
+        android:id="@+id/tlTable"
+        android:layout_below="@+id/ivPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama: "
+                android:textSize="30sp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat: "
+                android:textSize="30sp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telepon: "
+                android:textSize="30sp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_below="@+id/tlTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cbAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_box"
+            />
+        <Button
+            android:id="@+id/btDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:background="#3498db"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
